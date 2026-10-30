@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cp-judge"
+version = "0.1.0"
+description = "Local online judge: compiles and runs solutions in many languages against test suites with time and memory limits, verdicts (AC/WA/TLE/MLE/RE/CE), special checkers, parallel execution and HTML/JSON reports."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+cp-judge = "cp_judge.cli:main"
+
+[tool.setuptools]
+packages = ["cp_judge"]
